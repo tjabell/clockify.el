@@ -1,11 +1,12 @@
-;;; clockify.el --- Start and stop task inside Emacs  -*- lexical-binding: t; -*-
+;;; clockify.el --- Start, stop and create Clockify tasks -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2019  Marco Dalla Stella
 
 ;; Author: Marco Dalla Stella <marco@dallastella.name>
 ;; Keywords: calendar, tools
-;; Package-Requires: ((emacs "25") (projectile "0") (request "0") (json "0"))
-;; Version 0.0.1
+;; Package-Requires: ((emacs "25") (projectile "0") (request "0"))
+;; Version: 0.0.1
+;; Homepage: https://github.com/mdallastella/clockify.el
 
 ;;; Commentary:
 
@@ -13,7 +14,7 @@
 
 (require 'json)
 (require 'request)
-(require 'cl)
+(require 'cl-lib)
 
 (defvar clockify--curent-user-id nil)
 (defvar clockify--active-workspace-id nil)
