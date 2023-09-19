@@ -64,7 +64,7 @@ WORKSPACE-ID the workspace id."
 
 ;;; Functions
 
-(defun clockify--error-fn (&key error-thrown &allow-other-keys)
+(defun clockify--error-fn (&rest args &key error-thrown &allow-other-keys)
   "Callback to run in case of error request response.
 ERROR-THROWN is the request response data."
   (message "Got error: %S" error-thrown))
